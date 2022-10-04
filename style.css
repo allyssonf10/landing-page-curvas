@@ -201,11 +201,56 @@ nav a{
 /* RODA-PÉ */
 
 footer{
+    
+}
+
+.onda-pe{
+    width: 100%;
+    
+}
+
+.roda-pe{
     width: 1200px;
     height: 494px;
+    background:hsl(192, 100%, 9%); ;
     gap: 30%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: auto;
     align-content: center;
+    color: white;
 }
+
+/* PRIMEIRO GRID */
+
+.grid1 p{
+    width: 74%;
+    margin: 18px 0;
+}
+
+.contato{
+    
+}
+
+.telefone{
+    font-size: 13px;
+    margin: 15px 0;
+}
+
+.telefone img{
+    width: 4%;
+    margin: 0 10px 0 0;
+}
+
+.email{
+    font-size: 13px;
+    margin: 13px 0;
+}
+
+.email img{
+    width: 4%;
+    margin: 0 10px 0 0;
+}
+
+/* SEGUNDO GRID */
+
