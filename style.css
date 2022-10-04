@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* CABEÇALHO */
+
+header{
+    padding: 20px 0;
+    margin: 45px 0;
+}
+
+.caixa{
+    position: relative;
+    width: 93%;
+    margin: 0 auto;
+}
+
+.navegacao{
+    position: absolute;
+    top: 9px;
+    right: 0;
+}
+
+.entre{
+    list-style: none;
+}
+
+nav a{
+    color:hsl(321, 100%, 78%) ;
+    text-decoration: none;
+    border: 2px solid hsl(321, 100%, 78%);
+    padding: 8px 26px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/* PRIMEIRO CONJUNTO */
+
+.primeiro-conjunto{
+    display: flex;
+    justify-content: center;
+}
+
+.titulo{
+    color: hsl(192, 100%, 9%);
+    font-size: 38px;
+    margin: 20px;
+    text-align: center;
+}
+
+.subtitulo{
+    color: hsl(192, 100%, 9%);
+    font-size: 15px;
+    width: 41%;
+    text-align: center;
+    margin: 24px auto;
+    line-height: 1.5;
+}
+
+.inscreva{
+    width: 20%;
+    text-align: center;
+    border: none;
+    background:  hsl(321, 100%, 78%);
+    border-radius: 50px;
+    margin: 15px auto;
+    padding: 13px;
+    color: white;
+}
+
+.imagem-1{
+    width: 84%;
+    position: relative;
+    left: 95px;
+    margin: 34px 0;
+}
+
+/* SEGUNDO CONJUNTO */
+
+.segundo-conjunto{
+    display: flex;
+    justify-content: center;
+    gap: 23%;
+    margin: 47px 0;
+}
+
+.segundo-conjunto h2{
+    font-size: 67px;
+    margin: 10px;
+    color: hsl(192, 100%, 9%);
+}
+
+.segundo-conjunto p{
+    text-align: center;
+    opacity: 0.7;
+}
+
+.segundo-conjunto img{
+    width: 16%;
+    margin: 0 15px;
+}
+
+/* TERCEIRO E QUINTO CONJUNTO  */
+
+.terceiro-conjunto{
+    display: flex;
+    justify-content: center;
+    background: hsl(207, 100%, 98%);
+    margin: 90px 0;
+    padding: 71px 0;
+}
+
+.terceiro-conjunto img{
+    width: 40%;
+    float: right;
+}
+
+.conteudo-1{
+    width: 50%;
+    margin: 140px 0px 0 3px;
+}
+
+.terceiro-conjunto h3{
+    color:hsl(192, 100%, 9%) ;
+    font-size: 38px;
+    margin: 23px 0;
+}
+
+.terceiro-conjunto p{
+    color:hsl(192, 100%, 9%) ;
+    width: 79%;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+/* QUARTO CONJUNTO */
+
+.quarto-conjunto{
+    display: flex;
+    justify-content: center;
+    margin: 90px 0;
+    padding: 71px 0;
+}
+
+.conteudo-2{
+    width: 40%;
+    margin: 13% 0px -17% 49%;
+}
+
+.conteudo-2 h3{
+    color:hsl(192, 100%, 9%) ;
+    font-size: 38px;
+    margin: 23px 0;
+}
+
+.conteudo-2 p{
+    color:hsl(192, 100%, 9%) ;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.quarto-conjunto img{
+    width: 40%;
+    float: left;
+}
+
+/* SEXTO CONJUNTO */
+
+.corpo{
+    margin: 61px 0;
+}
+
+.titulo-2{
+    color: hsl(192, 100%, 9%);
+    font-size: 38px;
+    margin: 25px;
+    text-align: center;
+}
+
+.inscreva-2{
+    width: 18%;
+    text-align: center;
+    border: none;
+    background:  hsl(321, 100%, 78%);
+    border-radius: 50px;
+    margin: 25px auto;
+    padding: 17px;
+    color: white;
+}
+
+/* RODA-PÉ */
+
+footer{
+    width: 1200px;
+    height: 494px;
+    gap: 30%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    align-content: center;
+}
