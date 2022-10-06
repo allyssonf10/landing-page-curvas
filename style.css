@@ -14,23 +14,22 @@ body{
 
 header{
     padding: 20px 0;
-    margin: 45px 0;
+    margin: 45px 30px;
 }
 
 .caixa{
-    position: relative;
-    width: 93%;
-    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.navegacao{
-    position: absolute;
-    top: 9px;
-    right: 0;
-}
 
 .entre{
     list-style: none;
+}
+
+.entre:hover{
+    cursor: pointer;
 }
 
 nav a{
@@ -75,6 +74,11 @@ nav a{
     margin: 15px auto;
     padding: 13px;
     color: white;
+    box-shadow: 0px 6px 13px rgba(1, 1, 1, 0.479);
+}
+
+.inscreva:hover{
+    cursor: pointer;
 }
 
 .imagem-1{
@@ -111,31 +115,57 @@ nav a{
 
 /* TERCEIRO E QUINTO CONJUNTO  */
 
-.terceiro-conjunto{
+.conteudo{
     display: flex;
-    justify-content: center;
-    background: hsl(207, 100%, 98%);
-    margin: 90px 0;
-    padding: 71px 0;
+    flex-direction: column;
+    gap: 40px;
 }
 
-.terceiro-conjunto img{
-    width: 40%;
+.decoracao{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cartao1,
+.cartao3{
+    background: hsl(207, 100%, 98%);
+}
+
+.cartao {
+    display: flex;
+    padding: 20px;
+}
+
+.conteiner{
+    margin: 0 auto;
+    max-width: 1270px;
+    justify-content: space-between;
+}
+
+.grid{
+    
+  column-gap: 50px;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.cartao img{
+    width: 33%;
     float: right;
 }
 
 .conteudo-1{
-    width: 50%;
-    margin: 140px 0px 0 3px;
+    padding: 100px;
 }
 
-.terceiro-conjunto h3{
+.conteudo-1 h3{
     color:hsl(192, 100%, 9%) ;
     font-size: 38px;
     margin: 23px 0;
 }
 
-.terceiro-conjunto p{
+.conteudo-1 p{
     color:hsl(192, 100%, 9%) ;
     width: 79%;
     font-size: 15px;
@@ -152,8 +182,7 @@ nav a{
 }
 
 .conteudo-2{
-    width: 40%;
-    margin: 13% 0px -17% 49%;
+    width: 36%;
 }
 
 .conteudo-2 h3{
@@ -169,10 +198,10 @@ nav a{
     line-height: 1.4;
 }
 
-.quarto-conjunto img{
-    width: 40%;
-    float: left;
-}
+
+/* QUINTO CONJUNTO */
+
+
 
 /* SEXTO CONJUNTO */
 
@@ -196,6 +225,11 @@ nav a{
     margin: 25px auto;
     padding: 17px;
     color: white;
+    box-shadow: 0px 6px 13px rgba(1, 1, 1, 0.479);
+}
+
+.inscreva-2:hover{
+    cursor: pointer;
 }
 
 /* RODA-PÉ */
@@ -209,16 +243,19 @@ footer{
     
 }
 
+.balao{
+    background:hsl(192, 100%, 9%);
+    margin: -5px 0;
+}
+
 .roda-pe{
-    width: 1200px;
-    height: 494px;
-    background:hsl(192, 100%, 9%); ;
+    height: 402px;
     gap: 30%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     margin: auto;
     align-content: center;
     color: white;
+    padding-inline: 20%;
 }
 
 /* PRIMEIRO GRID */
@@ -226,10 +263,31 @@ footer{
 .grid1 p{
     width: 74%;
     margin: 18px 0;
+    line-height: 1.3;
+    font-size: 14px;
 }
 
-.contato{
-    
+.logo-pe{
+    padding-bottom: 20px;
+    display: flex;
+    gap: 8px;
+
+}
+
+.logo-icon{
+    height: 30px;
+    transition: ease-in-out 0.7s;
+}
+
+.logo-pe:hover{
+    cursor: pointer;
+}
+
+.logo-name:hover .logo-icon,
+.logo-icon:hover{
+    fill: #04763080;
+    transform: rotateY(360deg) translate(-3px, -3px);
+    transition: ease-in-out 0.7s;
 }
 
 .telefone{
@@ -254,3 +312,181 @@ footer{
 
 /* SEGUNDO GRID */
 
+.grid2 h1{
+    text-transform: uppercase;
+    margin: 12px 0 19px 0;
+}
+
+.grid2 p{
+    width: 75%;
+    line-height: 1.3;
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+.email-pe{
+    width: 63%;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 10px 28px 0px 0px;
+}
+
+.email-pe:hover{
+    cursor: pointer;
+}
+
+.envie{
+    padding: 12px 28px;
+    border-radius: 10px;
+    border: none;
+    background:hsl(322, 100%, 66%) ;
+    color: white;
+    font-size: 14px;
+}
+
+.envie:hover{
+    cursor: pointer;
+}
+
+/* REDES SOCIAIS */
+
+.social{
+    text-align: left;
+}
+
+.social a i{
+    color: white;
+    font-size: 19px;
+    position: relative;
+    left: 2%;
+    top: 36px;
+}
+
+.social a:not(:first-child){
+    margin-left: 2rem;
+}
+
+.social a i::after{
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
+    left: -14px;
+    bottom: -13px;
+}
+
+.social a i:hover{
+    color: hsl(210, 63%, 63%);
+}
+
+.social a i:hover::after{
+    border-color: hsl(210, 63%, 63%);
+}
+
+.social a:nth-child(2){
+    margin-left: 40px;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .inscreva{
+        width: 31%;
+    }
+
+    .segundo-conjunto{
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .caixa1{
+        display: flex;
+        gap: 12px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .caixa1 img{
+        width: 26%;
+    }
+
+    .roda-pe{
+        
+        height: 402px;
+        gap: 17%;
+        padding: 26px 49px;
+        display: flex;
+        margin: auto;
+        align-content: center;
+        color: white;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+
+    .cartao{
+        flex-direction: column-reverse;
+    }
+
+    .cartao img{
+        width: 59%;
+    }
+
+    .conteudo-1{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+
+    .conteudo-1 h3{
+        padding-top: 40px;
+    }
+
+    .conteudo-1 p {
+        width: 100%;
+        max-width: 324px;
+        padding-bottom: 40px;
+    }
+    .conteudo-2{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+
+    .conteudo-2 h3{
+        padding-top: 40px;
+    }
+
+    .conteudo-2 p {
+        width: 100%;
+        max-width: 324px;
+        padding-bottom: 40px;
+    }
+
+    .inscreva-2{
+        width: 38%;
+    }
+
+    .roda-pe{
+        
+        height: auto;
+        padding-top: 20px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .grid1{
+        height: 265px;
+    }
+
+    .social a i{
+        top: 6px;
+    }
+}
