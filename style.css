@@ -49,6 +49,12 @@ nav a{
     justify-content: center;
 }
 
+.entrada{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .titulo{
     color: hsl(192, 100%, 9%);
     font-size: 38px;
@@ -66,7 +72,9 @@ nav a{
 }
 
 .inscreva{
-    width: 20%;
+    display: flex;
+    justify-content: center;
+    width: auto;
     text-align: center;
     border: none;
     background:  hsl(321, 100%, 78%);
@@ -83,8 +91,6 @@ nav a{
 
 .imagem-1{
     width: 84%;
-    position: relative;
-    left: 95px;
     margin: 34px 0;
 }
 
@@ -137,6 +143,11 @@ nav a{
     padding: 20px;
 }
 
+.cartao2{
+    display: flex;
+    padding: 20px;
+}
+
 .conteiner{
     margin: 0 auto;
     max-width: 1270px;
@@ -151,6 +162,11 @@ nav a{
 }
 
 .cartao img{
+    width: 33%;
+    float: right;
+}
+
+.cartao2 img{
     width: 33%;
     float: right;
 }
@@ -182,7 +198,7 @@ nav a{
 }
 
 .conteudo-2{
-    width: 36%;
+  padding: 100px;
 }
 
 .conteudo-2 h3{
@@ -193,7 +209,7 @@ nav a{
 
 .conteudo-2 p{
     color:hsl(192, 100%, 9%) ;
-    width: 100%;
+    width: 77%;
     font-size: 14px;
     line-height: 1.4;
 }
@@ -366,23 +382,8 @@ footer{
     margin-left: 2rem;
 }
 
-.social a i::after{
-    content: '';
-    position: absolute;
-    height: 40px;
-    width: 40px;
-    border: 2px solid white;
-    border-radius: 50%;
-    left: -14px;
-    bottom: -13px;
-}
-
 .social a i:hover{
     color: hsl(210, 63%, 63%);
-}
-
-.social a i:hover::after{
-    border-color: hsl(210, 63%, 63%);
 }
 
 .social a:nth-child(2){
@@ -428,11 +429,21 @@ footer{
 
 @media screen and (max-width: 768px) {
 
+   
+
     .cartao{
         flex-direction: column-reverse;
     }
 
+    .cartao2{
+        flex-direction: column;
+    }
+
     .cartao img{
+        width: 59%;
+    }
+
+    .cartao2 img{
         width: 59%;
     }
 
@@ -445,6 +456,7 @@ footer{
 
     .conteudo-1 h3{
         padding-top: 40px;
+        font-size: 30px;
     }
 
     .conteudo-1 p {
@@ -452,25 +464,9 @@ footer{
         max-width: 324px;
         padding-bottom: 40px;
     }
-    .conteudo-2{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding: 0;
-    }
-
-    .conteudo-2 h3{
-        padding-top: 40px;
-    }
-
-    .conteudo-2 p {
-        width: 100%;
-        max-width: 324px;
-        padding-bottom: 40px;
-    }
 
     .inscreva-2{
-        width: 38%;
+        width: 59%;
     }
 
     .roda-pe{
@@ -487,6 +483,28 @@ footer{
     }
 
     .social a i{
-        top: 6px;
+        top: -4px;
+        font-size: 14px;
     }
+
+    .email-pe{
+        width: 79%;
+    }
+}
+
+@media screen and (max-width: 484px) {
+    
+    .subtitulo{
+        width: 67%;
+    }
+
+    .inscreva{
+        width: 56%;
+    }
+
+    .caixa{
+        flex-direction: column;
+        gap: 30px;
+    }
+    
 }
